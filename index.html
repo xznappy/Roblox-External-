@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Cheat</title>
+    <style>
+        
+        body, h1, h2, p, ul {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #0d0d0d;
+            color: #e0e0ff;
+            padding: 20px;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #1a1a2e;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            color: #4da6ff;
+            margin-bottom: 10px;
+            font-size: 36px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #4da6ff;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: block;
+            width: 250px;
+            height: 50px;
+            margin: 20px auto;
+            background-color: #333;
+            color: #4da6ff;
+            font-size: 18px;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            border: 2px solid #4da6ff;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #4da6ff;
+            color: #fff;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            background-color: #1a1a2e;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            color: #4da6ff;
+            font-size: 24px;
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 16px;
+            color: #4da6ff;
+            margin-top: 20px;
+            font-style: italic;
+        }
+    </style>
+    <script>
+        
+        function verifyKey() {
+            const enteredKey = prompt("Please enter your key:");
+            const validKey = "rosa-hash-ihszz-cgasf";
+
+            if (enteredKey === validKey) {
+                showPopup("1 Day Key Active");
+                setTimeout(() => {
+                    document.getElementById('site-content').style.display = 'block';
+                    document.getElementById('key-entry').style.display = 'none';
+                    hidePopup();
+                }, 2000);
+            } else {
+                alert("Invalid Key. Please try again.");
+            }
+        }
+
+      
+        function showPopup(message) {
+            const popup = document.getElementById("popup");
+            document.getElementById("popup-message").innerText = message;
+            popup.style.display = "flex";
+        }
+
+        
+        function hidePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    
+    <div id="key-entry">
+        <h1>Enter Key to Access Site</h1>
+        <button class="btn" onclick="verifyKey()">Enter Key</button>
+    </div>
+
+ 
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p id="popup-message"></p>
+        </div>
+    </div>
+
+    
+    <div id="site-content" style="display: none;">
+        <div class="container">
+            <h1>ROBLOX TOOL SINCE 2017</h1>
+            <p class="subtitle">4000+ VOUCHES</p>
+            <p style="text-align: center; color: #4da6ff; font-size: 24px;"></p>
+
+            
+            <a href="https://cdn.discordapp.com/attachments/1293344220249194577/1304637344262918226/Roblox_external.exe?ex=67301db5&is=672ecc35&hm=5b0074ed61508985332208d125808086588bf60fbdd6160cde9be799ed85b28a&" target="_blank" class="btn">DOWNLOAD NOW</a>
+
+           
+            <div class="btn" onclick="alert('sorry discord got termed. and we deleted telagram /where coming back dont worry .');">join telagram/discord </div>
+
+          
+            <div class="footer">BEST ROBLOX EXTERNAL cheat SINCE 2017 &nbsp;&nbsp;|&nbsp;&nbsp; 4000+ VOUCHES</div>
+        </div>
+    </div>
+</body>
+</html>
